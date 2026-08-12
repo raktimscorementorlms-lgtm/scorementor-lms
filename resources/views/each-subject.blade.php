@@ -21,7 +21,148 @@ $lessons = require_once base_path('data/lessons.php');
     <!-- // this is the right main section of the page -->
     <section class="main__body">
         <!-- // this is the app bar section -->
-        <section style="height: 83px; border-bottom: 1px solid black;"></section>
+        <!-- TOP APP BAR -->
+        <header class="h-[72px] w-full border-b border-slate-200 bg-white px-[28px]">
+            <div class="flex h-full items-center justify-between">
+
+                <!-- ========================= -->
+                <!-- LEFT: Breadcrumb          -->
+                <!-- ========================= -->
+                <nav class="flex items-center gap-[12px]">
+
+                    <!-- Back Arrow -->
+                    <button type="button" class="flex h-5 w-5 items-center justify-center text-slate-500">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.75 10.5L5.25 7L8.75 3.5" stroke="#64748B" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <!-- Class 10-A -->
+                    <a href="#" class="text-[12px] font-normal leading-[18px] text-slate-500">
+                        Class 10-A
+                    </a>
+
+                    <!-- Separator -->
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 3L7.5 6L4.5 9" stroke="#CBD5E1" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <!-- Mathematics -->
+                    <a href="#" class="text-[12px] font-normal leading-[18px] text-slate-500">
+                        Mathematics
+                    </a>
+
+                    <!-- Separator -->
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 3L7.5 6L4.5 9" stroke="#CBD5E1" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <!-- Quadratic Equations -->
+                    <a href="#" class="text-[12px] font-normal leading-[18px] text-slate-500">
+                        Quadratic Equations
+                    </a>
+
+                    <!-- Separator -->
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 3L7.5 6L4.5 9" stroke="#CBD5E1" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <!-- Current Page -->
+                    <span class="text-[12px] font-medium leading-[18px] text-slate-800">
+                        Video Lessons
+                    </span>
+
+                </nav>
+
+
+                <!-- ========================= -->
+                <!-- RIGHT: User Controls      -->
+                <!-- ========================= -->
+                <div class="flex items-center">
+
+                    <!-- Search -->
+                    <button type="button"
+                        class="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-slate-50">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7.2" cy="7.2" r="4.2" stroke="#475569" stroke-width="1.2" />
+                            <path d="M10.4 10.4L13 13" stroke="#475569" stroke-width="1.2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+
+                    <!-- Notification -->
+                    <div class="relative ml-[12px]">
+
+                        <button type="button"
+                            class="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-slate-50">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 14C8.73638 14 9.33333 13.403 9.33333 12.6667H6.66667C6.66667 13.403 7.26362 14 8 14Z"
+                                    fill="#475569" />
+
+                                <path
+                                    d="M12 10.6667H4C4.736 9.86 5.333 8.92667 5.333 7.33333V6.66667C5.333 5.19391 6.52724 4 8 4C9.47276 4 10.667 5.19391 10.667 6.66667V7.33333C10.667 8.92667 11.264 9.86 12 10.6667Z"
+                                    stroke="#475569" stroke-width="1.1" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                        <!-- Notification Badge -->
+                        <div
+                            class="absolute -right-[2px] -top-[4px] flex h-[14px] min-w-[14px] items-center justify-center rounded-full bg-red-500 px-[3px]">
+                            <span class="text-[8px] font-semibold leading-none text-white">
+                                3
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Avatar -->
+                    <div
+                        class="ml-[12px] flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full bg-slate-900">
+                        <span class="text-[11px] font-medium text-white">
+                            A1
+                        </span>
+                    </div>
+
+
+                    <!-- School / User Information -->
+                    <div class="ml-[12px] flex min-w-[76px] flex-col justify-center">
+
+                        <p class="whitespace-nowrap text-[11px] font-medium leading-[15px] text-slate-800">
+                            A1 Australia
+                        </p>
+
+                        <p class="mt-[1px] text-[9px] font-normal leading-[12px] text-slate-400">
+                            Student
+                        </p>
+                    </div>
+
+
+                    <!-- Dropdown -->
+                    <button type="button" class="ml-[10px] flex h-5 w-5 items-center justify-center">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="#64748B" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                </div>
+
+            </div>
+        </header>
 
         <!-- // main section -->
         <section class="main__container">
@@ -131,9 +272,9 @@ $lessons = require_once base_path('data/lessons.php');
                                 <?= htmlspecialchars($lesson['title']) ?>
                             </h3>
 
-                            <p class="max-w-xl text-base leading-7 text-slate-500">
+                            <span class="max-w-xl text-sm leading-7 text-slate-500">
                                 <?= htmlspecialchars($lesson['content']) ?>
-                            </p>
+                            </span>
 
                             <div class="mt-4 flex items-center gap-2 text-slate-400">
 
@@ -183,7 +324,7 @@ $lessons = require_once base_path('data/lessons.php');
                             </div>
 
                             <?php elseif ($isInProgress): ?>
-                            <div class="flex flex-col justify-center items-center w-max">
+                            <div class="flex flex-col justify-center items-center w-s">
                                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2556_1188)">
@@ -202,7 +343,7 @@ $lessons = require_once base_path('data/lessons.php');
                                 </p>
                             </div>
 
-                            <span class="mt-1 text-slate-400">
+                            <span class="mt-1 text-xs text-slate-400">
                                 <?= (int) $lesson['percentage'] ?>% Completed
                             </span>
 
@@ -226,7 +367,7 @@ $lessons = require_once base_path('data/lessons.php');
                                 Locked
                             </p>
 
-                            <span class="mt-1 max-w-42.5 leading-6 text-slate-400">
+                            <span class="mt-1 max-w-42.5 leading-6 text-xs text-slate-400">
                                 Complete previous lesson to unlock
                             </span>
 
@@ -241,9 +382,9 @@ $lessons = require_once base_path('data/lessons.php');
                     <div class="flex items-start gap-5 rounded-2xl border border-indigo-100 bg-indigo-50 px-8 py-6">
                         <!-- Icon -->
                         <div class="mt-1 shrink-0 text-indigo-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M9 18h6"></path>
                                 <path d="M10 22h4"></path>
                                 <path
@@ -306,7 +447,6 @@ $lessons = require_once base_path('data/lessons.php');
                                 Total length: 83:49 mins
                             </p>
                         </div>
-
                     </div>
                 </div>
 
@@ -328,12 +468,12 @@ $lessons = require_once base_path('data/lessons.php');
 
                         <div class="flex flex-col space-y-2">
 
-                            <div>
+                            <div class="text-sm">
                                 <p>Nature of Roots</p>
                                 <p>21:10 min</p>
                             </div>
 
-                            <p>
+                            <p class="text-sm text-slate-700">
                                 Learn about nature of roots using discriminant.
                             </p>
 
@@ -346,7 +486,7 @@ $lessons = require_once base_path('data/lessons.php');
                                         fill="#4F46E5" />
                                 </svg>
 
-                                <p class="text-lg text-indigo-700">Preview</p>
+                                <p class="text-sm text-indigo-700">Preview</p>
                             </button>
 
                         </div>

@@ -7,7 +7,7 @@ return [
         'duration' => '18:24',
         'status' => 'completed',
         'percentage' => 100,
-        'image' => '/assets/images/quadratic-introduction.png',
+        'image' => 'quadratic-graph.svg',
     ],
     [
         'title' => 'Methods of Solving Quadratic Equations',
@@ -15,7 +15,7 @@ return [
         'duration' => '26:45',
         'status' => 'in_progress',
         'percentage' => 65,
-        'image' => '/assets/images/quadratic-formula.png',
+        'image' => 'quadratic-formula.png',
     ],
     [
         'title' => 'Nature of Roots',
@@ -23,7 +23,7 @@ return [
         'duration' => '21:10',
         'status' => 'locked',
         'percentage' => 0,
-        'image' => '/assets/images/nature-of-roots.png',
+        'image' => 'basic-equations.png',
     ],
     [
         'title' => 'Word Problems',
@@ -31,6 +31,6 @@ return [
         'duration' => '16:30',
         'status' => 'locked',
         'percentage' => 0,
-        'image' => '/assets/images/word-problems.png',
+        'image' => 'shapes.png',
     ],
 ];

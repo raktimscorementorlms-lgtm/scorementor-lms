@@ -150,7 +150,6 @@ body {
 
 .main__container__right {
     flex: 3;
-    background-color: #000000;
     height: 50vh;
 }
 

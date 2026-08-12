@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get("/each-subject", function () {
     return view("each-subject");
 });
+
+Route::get("/exam-prep", function () {
+    return view("exam-prep");
+});
